@@ -1,0 +1,35 @@
+1 - Create a folder in plugins with your desired name "myplugin".
+
+2 - Create index.php and index.js
+
+3 - Enqueue your scripts with dependencies as well in index.js file. And check whether your files are working fine.
+
+4 - In index.js file create your block with "wp.blocks.registerBlockType". 
+
+5 - Give title, icon, category, edit(for backend) and save(for frontend).
+
+6 - Install Node.js.
+
+7 - Open terminal in your vs code (ctrl + j).
+
+8 - Type "npm inti -y" in terminal. This will create "package.json" in your folder.
+
+9 - Type "npm install @wordpress/scripts --save-dev". This will install wordpress scripts package in your plugin folder.
+
+10 - Create a new sub folder in your plugin with the exact same name "src". 
+
+11 - Create a new file "index.js" inside "src" folder. Now copy and paste all the code you have written in your eariler made "index.js" into your new "index.js" file. And delete the older one.
+
+12 - Open your "package.json" file. And search for "scripts". Under that array type " "build": "wp-scripts build", "start": "wp-scripts start", ".
+
+13 - Now after this you can run "start command" in your VS Code terminal.
+
+14 - Type "npm run start" in your terminal. This will create a "build" folder in your plugin folder. Which will convert all the JSX into JS.
+
+15 - Now go into your "index.php" and in enqueue script change your file path to "build/index.js". This will load the converted JSX.
+
+16 - In JSX you can only use 1 parent tag at a time. In order to use multiple you need to have a parent before it. Or you can use empty fragment tag "<></>"
+
+17 - To stop the terminal watching type "ctrl + C".
+
+18 - Thats it for a simplest Gurenberg Block.

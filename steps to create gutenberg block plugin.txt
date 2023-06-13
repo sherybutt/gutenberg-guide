@@ -2,7 +2,7 @@
 
 2 - Create index.php and index.js
 
-3 - Enqueue your scripts with dependencies as well in index.js file. And check whether your files are working fine.
+3 - Enqueue your scripts with dependencies as well in index.php file. And check whether your files are working fine.
 
 4 - In index.js file create your block with "wp.blocks.registerBlockType". 
 
